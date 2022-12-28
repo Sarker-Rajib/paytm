@@ -9,12 +9,12 @@ const Header = () => {
 
   const navLinks = (
     <>
-      <li>
+      <li className="hidden xl:block">
         <a className="text-sm font-semibold mr-6" href="/">
           Paytm for Consumer
         </a>
       </li>
-      <li>
+      <li className="hidden xl:block">
         <a className="text-sm font-semibold mr-6" href="/">
           Paytm for Business
         </a>
@@ -38,8 +38,8 @@ const Header = () => {
   );
 
   return (
-    <div className="max-w-[1400px] mx-auto  px-[52px] py-[47px]">
-      <nav className="flex justify-between items-center">
+    <div className="max-w-[1360px] mx-auto p-[20px] shadow xl:shadow-none">
+      <nav className="flex justify-between items-center ">
         <button
           onClick={() => {
             setSmallNav(!smallNav);
@@ -64,8 +64,8 @@ const Header = () => {
 
         <button className="bg-sky-400 text-white px-2 py-1 rounded-3xl">
           <span className="flex items-center">
-            Sign Up
-            <img src={user} alt="user" className="ml-2" />
+            Sign in
+            <img className="max-width-[20px] ml-1" src={user} alt="user" />
           </span>
         </button>
       </nav>
