@@ -46,7 +46,7 @@ const Header = () => {
           }}
           className="mr-3 inline-block md:hidden"
         >
-          <img src={btn} alt="" />
+          {smallNav ? "X" : <img src={btn} alt="" />}
         </button>
         <div className="flex">
           <button
@@ -55,7 +55,7 @@ const Header = () => {
             }}
             className="mr-3 xl:hidden hidden md:inline-block"
           >
-            <img src={btn} alt="" />
+            {smallNav ? "X" : <img src={btn} alt="" />}
           </button>
 
           <img src={logo} alt="brand-logo" />
